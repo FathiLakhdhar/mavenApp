@@ -7,12 +7,13 @@ public class TestCaseA {
 	@Test
     public void A()
     {
-        System.out.println("test A : Case 1");
+		int x=1/0;
     }
 	
 	@Test
     public void B()
     {
+		int x=1/0;
         System.out.println("test A : Case 2");
     }
 }

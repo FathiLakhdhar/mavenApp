@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="2" projectName="MavenApp" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite skipped="0" failed="1" name="SuiteZ" duration-ms="0" started-at="2018-03-04T02:10:02Z" finished-at="2018-03-04T02:10:02Z" passed="1">
+  <suite skipped="0" failed="1" name="SuiteZ" duration-ms="0" started-at="2018-03-04T01:57:50Z" finished-at="2018-03-04T01:57:50Z" passed="1">
     <groups>
     </groups>
-    <test name="suite_z_test_b" duration-ms="0" started-at="2018-03-04T02:10:02Z" finished-at="2018-03-04T02:10:02Z">
+    <test name="suite_z_test_b" duration-ms="0" started-at="2018-03-04T01:57:50Z" finished-at="2018-03-04T01:57:50Z">
       <class name="fis.ch.test.my_app_test.TestCase">
-        <test-method status="PASS" signature="fn()[pri:0, instance:fis.ch.test.my_app_test.TestCase@77556fd]" name="fn" duration-ms="0" started-at="2018-03-04T03:10:02Z" finished-at="2018-03-04T03:10:02Z">
+        <test-method status="PASS" signature="fn()[pri:0, instance:fis.ch.test.my_app_test.TestCase@77556fd]" name="fn" duration-ms="0" started-at="2018-03-04T02:57:50Z" finished-at="2018-03-04T02:57:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fn -->
-        <test-method status="FAIL" signature="f()[pri:0, instance:fis.ch.test.my_app_test.TestCase@77556fd]" name="f" duration-ms="0" started-at="2018-03-04T03:10:02Z" finished-at="2018-03-04T03:10:02Z">
+        <test-method status="FAIL" signature="f()[pri:0, instance:fis.ch.test.my_app_test.TestCase@77556fd]" name="f" duration-ms="0" started-at="2018-03-04T02:57:50Z" finished-at="2018-03-04T02:57:50Z">
           <exception class="java.lang.ArithmeticException">
             <message>
               <![CDATA[/ by zero]]>
@@ -48,19 +48,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:fis.ch.test.my_app_test.TestCase@77556fd]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-03-04T03:10:02Z" finished-at="2018-03-04T03:10:02Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:fis.ch.test.my_app_test.TestCase@77556fd]" name="beforeTest" is-config="true" duration-ms="0" started-at="2018-03-04T02:57:50Z" finished-at="2018-03-04T02:57:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
       </class> <!-- fis.ch.test.my_app_test.TestCase -->
     </test> <!-- suite_z_test_b -->
   </suite> <!-- SuiteZ -->
-  <suite skipped="0" failed="2" name="SuiteW" duration-ms="15" started-at="2018-03-04T02:10:02Z" finished-at="2018-03-04T02:10:02Z" passed="0">
+  <suite skipped="0" failed="2" name="SuiteW" duration-ms="16" started-at="2018-03-04T01:57:49Z" finished-at="2018-03-04T01:57:50Z" passed="0">
     <groups>
     </groups>
-    <test name="suite_w_test_a" duration-ms="15" started-at="2018-03-04T02:10:02Z" finished-at="2018-03-04T02:10:02Z">
+    <test name="suite_w_test_a" duration-ms="16" started-at="2018-03-04T01:57:49Z" finished-at="2018-03-04T01:57:50Z">
       <class name="fis.ch.test.my_app_test.TestCaseA">
-        <test-method status="FAIL" signature="B()[pri:0, instance:fis.ch.test.my_app_test.TestCaseA@3fb4f649]" name="B" duration-ms="0" started-at="2018-03-04T03:10:02Z" finished-at="2018-03-04T03:10:02Z">
+        <test-method status="FAIL" signature="B()[pri:0, instance:fis.ch.test.my_app_test.TestCaseA@3fb4f649]" name="B" duration-ms="0" started-at="2018-03-04T02:57:50Z" finished-at="2018-03-04T02:57:50Z">
           <exception class="java.lang.ArithmeticException">
             <message>
               <![CDATA[/ by zero]]>
@@ -97,7 +97,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- B -->
-        <test-method status="FAIL" signature="A()[pri:0, instance:fis.ch.test.my_app_test.TestCaseA@3fb4f649]" name="A" duration-ms="0" started-at="2018-03-04T03:10:02Z" finished-at="2018-03-04T03:10:02Z">
+        <test-method status="FAIL" signature="A()[pri:0, instance:fis.ch.test.my_app_test.TestCaseA@3fb4f649]" name="A" duration-ms="0" started-at="2018-03-04T02:57:50Z" finished-at="2018-03-04T02:57:50Z">
           <exception class="java.lang.ArithmeticException">
             <message>
               <![CDATA[/ by zero]]>

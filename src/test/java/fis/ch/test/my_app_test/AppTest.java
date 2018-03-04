@@ -22,7 +22,7 @@ public class AppTest
 	public static void main (String[] args){
 		AppTest app = new AppTest();
 		app.runTestNgProgrammatically();
-		app.request();
+		//app.request();
 	}
 	
 	protected void runTestNgProgrammatically() {
