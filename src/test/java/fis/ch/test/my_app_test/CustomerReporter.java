@@ -13,6 +13,10 @@ import org.testng.reporters.XMLStringBuffer;
 import org.testng.reporters.XMLSuiteResultWriter;
 import org.testng.xml.XmlSuite;
 
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
+
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
@@ -66,7 +70,25 @@ public class CustomerReporter implements IReporter {
     }
     rootBuffer.pop();
     Utils.writeUtf8File(config.getOutputDirectory(), FILE_NAME, rootBuffer, null /* no prefix */);
+    request(rootBuffer);
   }
+  
+  
+  public void request(XMLStringBuffer s) {
+		Client client = Client.create();
+
+		WebResource webResource = client
+		   .resource("http://localhost:9000/api/testng");
+
+		ClientResponse response = webResource.type("application/xml")
+               .post(ClientResponse.class, s.toXML());
+
+
+		String output = response.getEntity(String.class);
+
+		System.out.println("Output from Server .... \n");
+		System.out.println(output);
+	}
 
   private void writeReporterOutput(XMLStringBuffer xmlBuffer) {
     // TODO: Cosmin - maybe a <line> element isn't indicated for each line
@@ -275,4 +297,10 @@ public class CustomerReporter implements IReporter {
     return config.isGenerateTestResultAttributes();
   }
 
+  
+  
+  
+  
+  
+  
 }

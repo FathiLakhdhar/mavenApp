@@ -22,7 +22,6 @@ public class AppTest
 	public static void main (String[] args){
 		AppTest app = new AppTest();
 		app.runTestNgProgrammatically();
-		//app.request();
 	}
 	
 	protected void runTestNgProgrammatically() {
@@ -78,23 +77,6 @@ public class AppTest
 		
 		testng.setXmlSuites(suites);
 		testng.run();
-	}
-	
-	
-	public void request() {
-		Client client = Client.create();
-
-		WebResource webResource = client
-		   .resource("http://localhost:8080/api/json?token=4b76173f59e1b431e4d2bde0b723f2bc");
-
-		ClientResponse response = webResource.accept("application/json")
-                   .get(ClientResponse.class);
-
-
-		String output = response.getEntity(String.class);
-
-		System.out.println("Output from Server .... \n");
-		System.out.println(output);
 	}
 
 }
