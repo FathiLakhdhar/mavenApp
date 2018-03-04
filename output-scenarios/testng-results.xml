@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteZ" duration-ms="0" started-at="2018-03-03T23:40:19Z" finished-at="2018-03-03T23:40:19Z">
+    <groups>
+    </groups>
+    <test name="suite_z_test_b" duration-ms="0" started-at="2018-03-03T23:40:19Z" finished-at="2018-03-03T23:40:19Z">
+      <class name="fis.ch.test.my_app_test.TestCase">
+        <test-method status="PASS" signature="f()[pri:0, instance:fis.ch.test.my_app_test.TestCase@7960847b]" name="f" duration-ms="0" started-at="2018-03-04T00:40:19Z" finished-at="2018-03-04T00:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- fis.ch.test.my_app_test.TestCase -->
+    </test> <!-- suite_z_test_b -->
+  </suite> <!-- SuiteZ -->
+  <suite name="SuiteW" duration-ms="16" started-at="2018-03-03T23:40:19Z" finished-at="2018-03-03T23:40:19Z">
+    <groups>
+    </groups>
+    <test name="suite_w_test_a" duration-ms="16" started-at="2018-03-03T23:40:19Z" finished-at="2018-03-03T23:40:19Z">
+      <class name="fis.ch.test.my_app_test.TestCaseA">
+        <test-method status="PASS" signature="A()[pri:0, instance:fis.ch.test.my_app_test.TestCaseA@200a570f]" name="A" duration-ms="16" started-at="2018-03-04T00:40:19Z" finished-at="2018-03-04T00:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- A -->
+        <test-method status="PASS" signature="B()[pri:0, instance:fis.ch.test.my_app_test.TestCaseA@200a570f]" name="B" duration-ms="0" started-at="2018-03-04T00:40:19Z" finished-at="2018-03-04T00:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- B -->
+      </class> <!-- fis.ch.test.my_app_test.TestCaseA -->
+    </test> <!-- suite_w_test_a -->
+  </suite> <!-- SuiteW -->
+</testng-results>
