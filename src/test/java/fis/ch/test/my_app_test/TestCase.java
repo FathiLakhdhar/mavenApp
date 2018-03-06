@@ -9,6 +9,7 @@ public class TestCase {
 	@BeforeTest
 	public void beforeTest(){
 		System.out.println("BeforeTest");
+		int x=1/0;
 	}
 	
 	@Test

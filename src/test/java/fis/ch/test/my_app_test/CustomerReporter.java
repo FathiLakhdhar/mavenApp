@@ -50,18 +50,20 @@ public class CustomerReporter implements IReporter {
     for (ISuite s : suites) {
       for (ISuiteResult sr : s.getResults().values()) {
         ITestContext testContext = sr.getTestContext();
-        passed += (testContext.getFailedTests().size() == 0) ? 1 : 0;
+        
         failed += (testContext.getFailedTests().size() > 0) ? 1 : 0;
-        skipped += testContext.getSkippedTests().size();
+        skipped += (testContext.getSkippedTests().size() > 0) ? 1 : 0;
       }
     }
+    
+    passed = suites.size() - (failed + skipped);
 
     rootBuffer = new XMLStringBuffer();
     Properties p = new Properties();
     p.put("passed", passed);
     p.put("failed", failed);
     p.put("skipped", skipped);
-    p.put("total", passed + failed + skipped);
+    p.put("total", suites.size());
     p.put("projectName", "MavenApp");
     rootBuffer.push(XMLReporterConfig.TAG_TESTNG_RESULTS, p);
     writeReporterOutput(rootBuffer);

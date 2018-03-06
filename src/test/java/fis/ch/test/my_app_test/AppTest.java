@@ -45,7 +45,7 @@ public class AppTest
 		 */
 		
 		XmlSuite suiteZ = new XmlSuite();
-		suiteZ.setName("SuiteZ");
+		suiteZ.setName("Comptabilité en ligne et gestion iSuite expert : votre partenaire digital");
 		
 		
 		XmlTest testB = new XmlTest(suiteZ);
@@ -60,7 +60,7 @@ public class AppTest
 		 * Suite 2
 		 */
 		XmlSuite suiteW = new XmlSuite();
-		suiteW.setName("SuiteW");
+		suiteW.setName("iSuite Mobile – Applications Android sur Google Play");
 		
 		XmlTest testA = new XmlTest(suiteW);
 		testA.setName("suite_w_test_a");
@@ -71,8 +71,9 @@ public class AppTest
 		testA.setClasses(classes2);
 		
 		
-		suites.add(suiteW);
 		suites.add(suiteZ);
+		suites.add(suiteW);
+		
 		
 		
 		testng.setXmlSuites(suites);
